@@ -1,0 +1,18 @@
+global:
+  scrape_interval:     15s
+  evaluation_interval: 15s
+scrape_configs:
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+  - job_name: 'fake_app'
+    static_configs:
+      - targets: ['localhost:8081','localhost:8082']
+        labels:
+          env: prod
+      - targets: ['localhost:8083']
+        labels:
+          env: dev
+  - job_name: 'node_stats'
+    static_configs:
+      - targets: ['localhost:9100']

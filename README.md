@@ -115,7 +115,7 @@ fake_app/prometheus_demo_service -listen-address :8082 &
 fake_app/prometheus_demo_service -listen-address :8083 &
 ```
 
-Once started check out the demo service in a browser, to see how an exporter works, and the data looks like. Open a new tab for user{1..100}.playground.com:8081/metrics
+Once started check out the demo service in a browser, to see how an exporter works, and the data looks like. Open a new tab for <your_hostname>.playground.com:8081/metrics
 
 ### 6. Installing `node_exporter`
 
@@ -137,7 +137,7 @@ Once installed, start the service:
 
 ### 7. Querying
 
-* if it's not open, please go to `http://<your_user>.devopsplayground.com:9090`
+* if it's not open, please go to `http://<your_hostname>.devopsplayground.com:9090`
 * Please see the queries below for for your reference:
   * `http_requests_total`
   * `http_requests_total{job='fake_app'}`

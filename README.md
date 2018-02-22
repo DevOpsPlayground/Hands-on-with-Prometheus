@@ -1,6 +1,6 @@
 # DevOps Playground #18: Hands on Prometheus
 
-![Prometheus Logo](https://github.com/ecsdigital/devopsplayground18-prometheus/assets/prometheus_logo_orange.png)
+![Prometheus Logo](https://github.com/ecsdigital/devopsplayground18-prometheus/raw/master/assets/prometheus_logo_orange.png)
 
 ## Introduction
 

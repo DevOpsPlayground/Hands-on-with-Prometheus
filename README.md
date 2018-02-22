@@ -16,7 +16,7 @@ On this Playground we're going to install Prometheus on a server, alongside with
 * Modern browser with JS enabled or Terminal or Putty
 * Minimal knowledge of how an ssh terminal works.
 
-## Setup
+## Setup
 
 * Open the web terminal (web terminal: http://<your_hostname>.devopsplayground.com)
 * Your Actual host name and user/pass are assigned at the start of the presentation.

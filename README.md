@@ -37,7 +37,7 @@ tar zxvf prometheus-2.2.0-rc.0.linux-amd64.tar.gz -C ./prometheus --strip-compon
 rm -f prometheus-2.2.0-rc.0.linux-amd64.tar.gz
 ```
 
-### 2. First start of prometheus:
+### 2. First start of prometheus
 
 Let's explore prometheus on it's on first. Start the service, and check if the UI works.
 
@@ -54,7 +54,7 @@ Explore the UI:
 * **Graph.** This is where we'll send queries to our Prometheus instance, and can see the results in text and in graph formats. Note: This is mainly for exploring, not for building dashboards.
 * **Alerts.** Where you'll see the triggered alerts.
 
-### 3. `CTRL+C` the current process, and see the contents of the config file called `playground.yml`:
+### 3. `CTRL+C` the current process, and see the contents of the config file called `playground.yml`
 
 ```bash
 cat playground.yml
@@ -87,7 +87,7 @@ scrape_configs:
 Explanation:
 We'll use 4 targets in our playground. One will be a service that monitors the server's health, and 3 targets of the same fake application, created by Julius. These targets will allow us to explore the querying capabilities of Prometheus.
 
-### 4. Start prometheus in the background with the config file
+### 4. Start prometheus in the background with the config file
 
 ```bash
 nohup ./prometheus --web.enable-lifecycle --config.file=playground.yml &
@@ -117,7 +117,7 @@ fake_app/prometheus_demo_service -listen-address :8083 &
 
 Once started check out the demo service in a browser, to see how an exporter works, and the data looks like. Open a new tab for user{1..100}.playground.com:8081/metrics
 
-### 6. Installing `node_exporter`
+### 6. Installing `node_exporter`
 
 Node Exporter is the official system metrics engine for Prometheus. It's already installed on your system, but in case any problems, here's the commands to install it:
 
@@ -135,7 +135,7 @@ Once installed, start the service:
 ./node_exporter &
 ```
 
-### 7. Querying
+### 7. Querying
 
 * if it's not open, please go to `http://<your_user>.devopsplayground.com:9090`
 * Please see the queries below for for your reference:
@@ -214,8 +214,7 @@ curl -X POST http://localhost:9090/-/reload
 Please help us improve by filling this survey out. Only takes about 2 minutes, and your help is greatly appreciated:
 http://bit.ly/2CCqbUA
 
-
-## Useful links:
+## Useful links
 
 * https://github.com/roaldnefs/awesome-prometheus
 * https://www.slideshare.net/grobie/the-history-of-prometheus-at-soundcloud

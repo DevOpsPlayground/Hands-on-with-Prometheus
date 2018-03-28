@@ -212,7 +212,7 @@ curl -X POST http://localhost:9090/-/reload
 ## Survey
 
 Please help us improve by filling this survey out. Only takes about 2 minutes, and your help is greatly appreciated:
-http://bit.ly/2CCqbUA
+https://goo.gl/rVf6ew
 
 ## Useful links
 
